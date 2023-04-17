@@ -38,19 +38,26 @@
   margin-bottom: 20px;
 }
 .form-container {
-  background-image: linear-gradient(
-    to right,
-    rgb(0, 128, 255),
-    rgba(0, 162, 255, 0.565),
-    rgb(0, 128, 255)
-  );
-}
-.ant-form {
-  width: 350px;
+  background-image: url("D:\Playground\React\Online-Doctor-Appointment-System\5063406.jpg");
+  background-size: cover;
 }
 .m-2 {
   text-align: center;
 }
 .header {
   border-radius: 5px;
+}
+.register-form{
+  width: 300px;
+}
+.main{
+  background-color: #fef0e7;
+}
+.body{
+  background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
