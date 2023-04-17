@@ -18,3 +18,39 @@
   width: 250px !important;
   margin-top: 30px !important;
 }
+.btn-cont {
+  display: flex;
+  flex-direction: column;
+}
+.m-2 {
+  text-decoration: none;
+}
+.m-2:hover .underlined {
+  text-decoration: underline;
+}
+.ant-form {
+  line-height: 0.55;
+  border-radius: 5px;
+  background: #ffffff;
+  box-shadow: 4px 5px 0px #000000;
+}
+.text-center {
+  margin-bottom: 20px;
+}
+.form-container {
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 128, 255),
+    rgba(0, 162, 255, 0.565),
+    rgb(0, 128, 255)
+  );
+}
+.ant-form {
+  width: 350px;
+}
+.m-2 {
+  text-align: center;
+}
+.header {
+  border-radius: 5px;
+}

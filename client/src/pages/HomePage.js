@@ -30,7 +30,7 @@ const HomePage = () => {
   }, []);
   return (
     <Layout>
-      <h1 className="text-center">Home Page</h1>
+      <h1 className="text-center">List of Doctors</h1>
       <Row>
         {doctors && doctors.map((doctor) => <DoctorList doctor={doctor} />)}
       </Row>

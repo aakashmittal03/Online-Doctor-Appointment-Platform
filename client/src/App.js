@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import SignInForm from './pages/Login/LoginMain/SignInForm';
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import { useSelector } from "react-redux";
@@ -70,14 +69,6 @@ function App() {
                 <ProtectedRoute>
                   <NotificationPage />
                 </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/SignInForm"
-              element={
-                <PublicRoute>
-                  <SignInForm />
-                </PublicRoute>
               }
             />
             <Route

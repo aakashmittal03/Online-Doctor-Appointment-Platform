@@ -18,7 +18,7 @@ const router = express.Router();
 
 //routes
 //LOGIN || POST
-router.post("/signinform", loginController);
+router.post("/login", loginController);
 
 //REGISTER || POST
 router.post("/register", registerController);

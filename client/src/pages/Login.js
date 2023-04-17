@@ -13,7 +13,7 @@ const Login = () => {
   const onfinishHandler = async (values) => {
     try {
       dispatch(showLoading());
-      const res = await axios.post("/api/v1/user/signinform", values);
+      const res = await axios.post("/api/v1/user/login", values);
       window.location.reload();
       dispatch(hideLoading());
       if (res.data.success) {
@@ -44,12 +44,14 @@ const Login = () => {
         <Form.Item label="Password" name="password">
           <Input type="password" required />
         </Form.Item>
-        <Link to="/register" className="m-2">
-          Not a user Register here
-        </Link>
-        <button className="btn btn-primary" type="submit">
-          Login
-        </button>
+        <div className="btn-cont">
+          <button className="btn btn-primary" type="submit">
+            Login
+          </button>
+          <Link to="/register" className="m-2">
+            Not a user ? <span className="underlined">Register here</span>
+          </Link>
+        </div>
       </Form>
     </div>
   );

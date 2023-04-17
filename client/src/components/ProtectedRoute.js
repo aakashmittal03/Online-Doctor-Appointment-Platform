@@ -28,7 +28,7 @@ export default function ProtectedRoute({ children }) {
         dispatch(setUser(res.data.data));
       } else {
         localStorage.clear();
-        <Navigate to="/signinform" />;
+        <Navigate to="/login" />;
       }
     } catch (error) {
       localStorage.clear();
@@ -46,6 +46,6 @@ export default function ProtectedRoute({ children }) {
   if (localStorage.getItem("token")) {
     return children;
   } else {
-    return <Navigate to="/signinform" />;
+    return <Navigate to="/login" />;
   }
 }
